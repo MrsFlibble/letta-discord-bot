@@ -291,9 +291,9 @@ async function startRandomEventTimer() {
   }
 
   // Set a minimum delay to prevent too-frequent firing (at least 1 minute)
-  const minMinutes = 1;
+
   // Generate random minutes between minMinutes and TIMER_INTERVAL_MINUTES
-  const randomMinutes = minMinutes + Math.floor(Math.random() * (TIMER_INTERVAL_MINUTES - minMinutes));
+  const randomMinutes = TIMER_INTERVAL_MINUTES;
   
   // Log the next timer interval for debugging
   console.log(`⏰ Timer scheduled to fire in ${randomMinutes} minutes`);
